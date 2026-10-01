@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TramitaFedmx | Placas Federales SCT - Logística Confiable y Global CDMX</title>
+  <meta name="description" content="Tramitamos sus placas federales. Servicios rápidos y profesionales ante la SICT/SCT. Tractocamiones, semirremolques, verificación físico-mecánica y permisos especiales en 15 días garantizados. Gestor Jair Quintana en Pantitlán CDMX." />
+  
+  <!-- Favicon con el logo del camión -->
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            fed: {
+              wine: '#8b1e3f',
+              'wine-dark': '#6d132e',
+              'wine-light': '#a8294e',
+              magenta: '#c026d3',
+              pink: '#db2777',
+              navy: '#0f172a'
+            }
+          },
+          screens: {
+            '2xl': '1536px',
+            '3xl': '1920px'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f17] dark:text-slate-100 min-h-screen flex flex-col antialiased selection:bg-fed-wine selection:text-white transition-colors duration-200">
+
+  <!-- ========================================================================
+       BARRA SUPERIOR DE CONTACTO RÁPIDO (Optimizada para PC y Móvil)
+       ======================================================================== -->
+  <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-slate-800">
+    <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto flex flex-wrap justify-between items-center gap-3">
+      
+      <div class="flex items-center space-x-3 sm:space-x-5 text-[11px] sm:text-xs">
+        <span class="inline-flex items-center text-emerald-400 font-bold">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 mr-2 animate-pulse"></span>
+          GESTORÍA OFICIAL SICT • CDMX
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:flex items-center text-slate-300">
+          <svg class="w-3.5 h-3.5 mr-1.5 text-fed-wine-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Av. Central #79, Agrícola Pantitlán, CDMX
+        </span>
+        <span class="hidden lg:inline text-slate-600">|</span>
+        <span class="hidden lg:inline text-slate-400 font-medium">Entrega en 15 días garantizada</span>
+      </div>
+
+      <div class="flex items-center space-x-4 text-xs font-semibold">
+        <a href="tel:5540519678" class="hover:text-white flex items-center transition-colors text-slate-200">
+          <svg class="w-3.5 h-3.5 mr-1.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          55 40 51 96 78
+        </a>
+        <span class="text-slate-700">|</span>
+        <a href="mailto:jrqgestor@gmail.com" class="hover:text-white hidden sm:inline transition-colors text-slate-300">jrqgestor@gmail.com</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       HEADER / NAVEGACIÓN (Con tu Logotipo Oficial en Alta Resolución)
+       ======================================================================== -->
+  <header class="sticky top-0 z-40 glass-effect border-b border-slate-200/80 dark:border-slate-800 transition-colors">
+    <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+      
+      <!-- LOGO OFICIAL (Modo claro y Modo oscuro) -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <!-- Logo en Modo Claro -->
+        <img 
+          src="logo.png" 
+          alt="TramitaFedmx Placas Federales - Logística Confiable y Global" 
+          class="h-12 sm:h-16 w-auto object-contain dark:hidden transition-transform group-hover:scale-105" 
+        />
+        <!-- Logo en Modo Oscuro -->
+        <img 
+          src="logo-dark.png" 
+          alt="TramitaFedmx Placas Federales - Logística Confiable y Global" 
+          class="h-12 sm:h-16 w-auto object-contain hidden dark:block transition-transform group-hover:scale-105" 
+        />
+      </a>
+
+      <!-- NAVEGACIÓN DESKTOP (PC) -->
+      <nav class="hidden xl:flex items-center space-x-8 text-sm font-bold text-slate-700 dark:text-slate-200">
+        <a href="#publicidad" class="hover:text-fed-wine dark:hover:text-rose-400 transition-colors flex items-center">
+          <span>Publicidad Oficial</span>
+          <span class="ml-1.5 px-2 py-0.5 text-[10px] rounded-full bg-rose-100 text-fed-wine dark:bg-rose-950 dark:text-rose-300 font-extrabold uppercase">Nuevo</span>
+        </a>
+        <a href="#servicios" class="hover:text-fed-wine dark:hover:text-rose-400 transition-colors">Servicios</a>
+        <a href="#calendario" class="hover:text-fed-wine dark:hover:text-rose-400 transition-colors flex items-center">
+          <span>Calendario Físico-Mecánica</span>
+          <span class="ml-1.5 px-2 py-0.5 text-[10px] rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 font-extrabold uppercase">NOM-068</span>
+        </a>
+        <a href="#proceso" class="hover:text-fed-wine dark:hover:text-rose-400 transition-colors">Proceso (15 Días)</a>
+        <a href="#requisitos" class="hover:text-fed-wine dark:hover:text-rose-400 transition-colors">Requisitos</a>
+        <a href="#ubicacion" class="hover:text-fed-wine dark:hover:text-rose-400 transition-colors">Oficina Pantitlán</a>
+      </nav>
+
+      <!-- ACCIONES: TEMA + CTA WHATSAPP -->
+      <div class="hidden sm:flex items-center space-x-4">
+        <!-- Switch de Modo Claro / Oscuro -->
+        <button id="theme-toggle" type="button" aria-label="Cambiar tema de color" class="p-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-200/70 dark:hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-300 dark:hover:border-slate-700">
+          <svg id="theme-toggle-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
+        </button>
+
+        <a href="#tramite-asistido" class="inline-flex items-center justify-center px-6 py-3 rounded-xl text-sm font-extrabold text-white bg-fed-wine hover:bg-fed-wine-dark shadow-lg shadow-fed-wine/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Comenzar Trámite
+        </a>
+      </div>
+
+      <!-- BOTÓN MENÚ MÓVIL / TABLET -->
+      <div class="flex items-center space-x-2 xl:hidden">
+        <button id="theme-toggle-mobile" onclick="document.getElementById('theme-toggle').click()" class="p-2 rounded-lg text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-800">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+        <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- MENÚ MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden xl:hidden px-4 pt-2 pb-6 space-y-3 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-xl">
+      <a href="#publicidad" class="mobile-nav-link block py-2.5 px-3 rounded-lg font-bold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Publicidad Impresa Oficial</a>
+      <a href="#servicios" class="mobile-nav-link block py-2.5 px-3 rounded-lg font-bold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Nuestros Servicios</a>
+      <a href="#calendario" class="mobile-nav-link block py-2.5 px-3 rounded-lg font-bold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Calendario Físico-Mecánica</a>
+      <a href="#proceso" class="mobile-nav-link block py-2.5 px-3 rounded-lg font-bold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Proceso en 15 Días</a>
+      <a href="#requisitos" class="mobile-nav-link block py-2.5 px-3 rounded-lg font-bold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Requisitos de Emisión</a>
+      <a href="#ubicacion" class="mobile-nav-link block py-2.5 px-3 rounded-lg font-bold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Ubicación Pantitlán</a>
+      <a href="#tramite-asistido" class="mobile-nav-link block w-full text-center py-3.5 rounded-xl font-extrabold text-white bg-fed-wine hover:bg-fed-wine-dark mt-2 shadow-md">Iniciar Trámite Ahora</a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- ========================================================================
+         HERO SECTION: ESTILO DE LA PUBLICIDAD OFICIAL IMPRESA
+         ======================================================================== -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24 bg-gradient-to-b from-slate-100 via-white to-slate-50 dark:from-slate-950 dark:via-[#0c121d] dark:to-[#0b0f17]">
+      <!-- Fondo sutil con cuadrícula -->
+      <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none bg-[radial-gradient(#8b1e3f_1px,transparent_1px)] [background-size:20px_20px]"></div>
+      
+      <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- ENCABEZADO 3D EMBLEMÁTICO (Idéntico al flyer impreso) -->
+        <div class="text-center mb-8 lg:mb-12">
+          <div class="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight font-heading leading-tight">
+            <span class="text-slate-900 dark:text-white text-3d-black">PLACAS</span> 
+            <span class="text-3d-federales">FEDERALES</span>
+          </div>
+          
+          <div class="mt-3 space-y-1">
+            <h2 class="text-xl sm:text-3xl lg:text-4xl font-extrabold text-fed-wine dark:text-rose-500 tracking-tight uppercase">
+              Tramitamos sus Placas Federales
+            </h2>
+            <p class="text-base sm:text-xl font-bold text-slate-800 dark:text-slate-200 tracking-wide uppercase">
+              Servicios Rápidos y Profesionales ante la SICT / SCT
+            </p>
+          </div>
+
+          <!-- INSIGNIA: SOLUCIONES LOGÍSTICAS CONFIABLES -->
+          <div class="mt-4 inline-flex items-center px-6 py-2 rounded-full bg-fed-wine text-white text-xs sm:text-sm font-extrabold uppercase tracking-widest shadow-md">
+            <span>Soluciones Logísticas Confiables</span>
+          </div>
+        </div>
+
+        <!-- GRID PRINCIPAL DEL HERO: INFORMACIÓN + COMPOSICIÓN VISUAL -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- COLUMNA IZQUIERDA: PROPUESTA DE VALOR + FIRMA DEL GESTOR JAIR QUINTANA -->
+          <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+            
+            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              Gestoría de alta gama para <strong>tractocamiones, semirremolques, cajas secas, tolvas y rabones</strong>. Olvídate de intermediarios dudosos: tramitamos directamente ante ventanilla de la Secretaría con entrega en <strong class="text-slate-900 dark:text-white underline decoration-fed-wine decoration-2">15 días hábiles garantizados</strong>.
+            </p>
+
+            <!-- TARJETA SELLO DE JAIR QUINTANA (Réplica del recuadro del impreso) -->
+            <div class="signature-stamp p-5 sm:p-6 max-w-lg mx-auto lg:mx-0 relative flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-xl bg-fed-wine/10 dark:bg-rose-500/20 text-fed-wine dark:text-rose-400 flex items-center justify-center font-bold text-2xl shrink-0">
+                  ✍️
+                </div>
+                <div class="text-left">
+                  <span class="text-[10px] uppercase font-black tracking-widest text-fed-wine dark:text-rose-400 block">Gestor Especializado Titular</span>
+                  <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-heading">JAIR QUINTANA</h3>
+                  <a href="tel:5540519678" class="text-base sm:text-lg font-black text-emerald-600 dark:text-emerald-400 font-mono hover:underline flex items-center">
+                    📞 55 40 51 96 78
+                  </a>
+                </div>
+              </div>
+
+              <a href="https://wa.me/525540519678?text=Hola%20Jair%20Quintana%2C%20vi%20tu%20publicidad%20de%20placas%20federales%20y%20quiero%20cotizar." target="_blank" class="w-full sm:w-auto px-4 py-2.5 rounded-lg text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 transition-colors shadow-sm text-center shrink-0">
+                Contactar Directo →
+              </a>
+            </div>
+
+            <!-- BOTONES DE LLAMADA A LA ACCIÓN -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="https://wa.me/525540519678?text=Hola%20Jair%2C%20necesito%20cotizar%20un%20tr%C3%A1mite%20de%20placas%20federales%20ante%20la%20SICT." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-extrabold text-white bg-emerald-600 hover:bg-emerald-700 shadow-xl shadow-emerald-600/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                <svg class="w-5 h-5 mr-2.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.088-.177.183-.076.357.101.174.45 1.05 1.05 1.584.773.689 1.426.902 1.628.989.202.087.321.073.441-.065.12-.138.514-.6.651-.806.137-.206.274-.173.461-.101.188.072 1.188.56 1.391.661.202.101.337.151.386.236.049.085.049.493-.095.898zM12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2 22l5.163-1.314A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+                Cotizar por WhatsApp
+              </a>
+
+              <a href="#calendario" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-extrabold text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-800/90 border border-slate-300 dark:border-slate-700 hover:border-fed-wine hover:text-fed-wine dark:hover:border-rose-500 dark:hover:text-rose-400 shadow-sm transition-all">
+                <svg class="w-5 h-5 mr-2 text-fed-wine dark:text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                Calendario Físico-Mecánica
+              </a>
+            </div>
+
+            <!-- GARANTÍAS DE CONFIANZA -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-slate-200 dark:border-slate-800 text-left">
+              <div class="flex items-center space-x-2">
+                <span class="text-emerald-500 font-black text-xl">⚡</span>
+                <div>
+                  <p class="text-xs font-black text-slate-900 dark:text-white">15 Días</p>
+                  <p class="text-[11px] text-slate-500 dark:text-slate-400">Entrega formal</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="text-fed-wine dark:text-rose-400 font-black text-xl">🛡️</span>
+                <div>
+                  <p class="text-xs font-black text-slate-900 dark:text-white">100% Legal</p>
+                  <p class="text-[11px] text-slate-500 dark:text-slate-400">Cotejo SICT</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="text-blue-500 font-black text-xl">📍</span>
+                <div>
+                  <p class="text-xs font-black text-slate-900 dark:text-white">Oficina Física</p>
+                  <p class="text-[11px] text-slate-500 dark:text-slate-400">Agrícola Pantitlán</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="text-amber-500 font-black text-xl">🇲🇽</span>
+                <div>
+                  <p class="text-xs font-black text-slate-900 dark:text-white">Nacional</p>
+                  <p class="text-[11px] text-slate-500 dark:text-slate-400">Envíos a todo México</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- COLUMNA DERECHA: PLACA FEDERAL CON GRECAS + MOSTRADOR DE PUBLICIDAD OFICIAL -->
+          <div class="lg:col-span-6 flex flex-col items-center justify-center space-y-6">
+            
+            <!-- PLACA FEDERAL SIMULADA CON EL DISEÑO AUTÉNTICO DEL IMPRESO -->
+            <div class="w-full max-w-lg plate-sim p-6 sm:p-7 relative transition-all duration-300 transform hover:scale-[1.01] pc-ad-shadow">
+              
+              <!-- 4 Tornillos metálicos -->
+              <div class="absolute top-3 left-3 plate-bolt"></div>
+              <div class="absolute top-3 right-3 plate-bolt"></div>
+              <div class="absolute bottom-3 left-3 plate-bolt"></div>
+              <div class="absolute bottom-3 right-3 plate-bolt"></div>
+
+              <!-- Franja Superior Rosa/Magenta Institucional con 'F' y Estrella -->
+              <div class="bg-gradient-to-r from-pink-600 via-fed-wine to-pink-600 text-white rounded-t-lg p-2.5 text-center relative mb-1 shadow-inner">
+                <div class="flex justify-between items-center px-3">
+                  <span class="w-6 h-6 rounded bg-white text-fed-wine font-black text-xs flex items-center justify-center shadow-sm">F</span>
+                  <div class="text-[10px] sm:text-xs font-extrabold uppercase tracking-wider leading-tight">
+                    AUTOTRANSPORTE FEDERAL<br/>AUTOTRANSPORTE FEDERAL
+                  </div>
+                  <span class="text-amber-300 font-bold text-base">★</span>
+                </div>
+              </div>
+
+              <!-- Grecas Mesoamericanas Superiores -->
+              <div class="plate-grecas mb-2"></div>
+
+              <!-- Título MÉXICO -->
+              <div class="text-center">
+                <span class="text-xs font-black tracking-widest uppercase text-slate-700 dark:text-slate-300">MÉXICO</span>
+              </div>
+
+              <!-- Matrícula Emblema -->
+              <div class="text-center py-2 relative">
+                <div class="text-5xl sm:text-7xl font-black tracking-widest text-slate-900 dark:text-white font-mono drop-shadow-md">
+                  55-PK-47
+                </div>
+                <!-- Marca de agua inferior -->
+                <div class="text-xs sm:text-sm font-bold text-slate-400/40 dark:text-slate-500/30 tracking-widest font-mono select-none">
+                  55 - PK - 47
+                </div>
+              </div>
+
+              <!-- Grecas Mesoamericanas Inferiores -->
+              <div class="plate-grecas mt-2 mb-3"></div>
+
+              <!-- Pie de placa con folio de validación -->
+              <div class="flex justify-between items-center text-[10px] text-slate-500 dark:text-slate-400 font-mono border-t border-dashed border-slate-300 dark:border-slate-700 pt-2 px-1">
+                <span class="font-bold text-emerald-600 dark:text-emerald-400">● VALIDADA EN SISTEMA SICT</span>
+                <span class="font-bold">ENTREGA EN 15 DÍAS</span>
+              </div>
+
+            </div>
+
+            <!-- TARJETA CON MINIATURA DE LA PUBLICIDAD IMPRESA + BOTÓN DE ZOOM -->
+            <div class="w-full max-w-lg bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-5 shadow-xl border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-4">
+              <div class="flex items-center space-x-3.5">
+                <div class="relative w-20 h-14 rounded-lg overflow-hidden border border-slate-300 dark:border-slate-700 shadow-sm shrink-0 cursor-pointer open-ad-modal">
+                  <img src="publicidad-oficial.webp" alt="Volante impreso TramitaFedmx" class="w-full h-full object-cover hover:scale-110 transition-transform" />
+                  <div class="absolute inset-0 bg-black/20 flex items-center justify-center text-white text-xs">🔍</div>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900 dark:text-white">Publicidad Oficial Impresa</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">Distribuida en patios y terminales de CDMX</p>
+                </div>
+              </div>
+
+              <button type="button" class="open-ad-modal px-3.5 py-2 rounded-xl text-xs font-bold text-fed-wine dark:text-rose-400 bg-fed-wine/10 dark:bg-rose-500/10 hover:bg-fed-wine hover:text-white dark:hover:bg-rose-600 dark:hover:text-white transition-all shrink-0">
+                Ver Volante Completo ↗
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN DEDICADA: NUESTRA PUBLICIDAD OFICIAL Y PRESENCIA (PC & Móvil)
+         ======================================================================== -->
+    <section id="publicidad" class="py-16 sm:py-24 bg-slate-900 text-white border-y border-slate-800 relative overflow-hidden">
+      <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <span class="px-3.5 py-1.5 rounded-full bg-fed-wine/30 text-rose-300 border border-fed-wine/50 text-xs font-black uppercase tracking-wider">
+            RESPALDO FÍSICO Y PRESENCIA LOCAL
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight font-heading mt-3">
+            Nuestra Publicidad Oficial Impresa
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-3 leading-relaxed">
+            Así nos conocen los transportistas en las principales rutas y terminales de carga. Material impreso con información técnica verificable y atención personalizada de <strong>Jair Quintana</strong>.
+          </p>
+        </div>
+
+        <!-- MOSTRADOR EN PANTALLA ANCHA (PC) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- IMAGEN DEL ANUNCIO CON BOTÓN DE AMPLIACIÓN -->
+          <div class="lg:col-span-7">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-700/80 group cursor-pointer open-ad-modal">
+              <picture>
+                <source srcset="publicidad-oficial.webp" type="image/webp" />
+                <img 
+                  src="publicidad-oficial.jpg" 
+                  alt="Anuncio Oficial Impreso Placas Federales TramitaFedmx Jair Quintana" 
+                  class="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500" 
+                  loading="lazy"
+                />
+              </picture>
+              
+              <!-- Overlay con botón de zoom en hover -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-6">
+                <div>
+                  <p class="text-sm font-extrabold text-white">Publicidad Oficial TramitaFedmx</p>
+                  <p class="text-xs text-slate-300">Click para ampliar a tamaño completo</p>
+                </div>
+                <span class="px-4 py-2 rounded-xl bg-fed-wine text-white text-xs font-bold shadow-lg flex items-center">
+                  🔍 Ampliar
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DETALLES Y PUNTOS CLAVE DEL ANUNCIO -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="bg-slate-800/90 rounded-2xl p-6 border border-slate-700 space-y-4">
+              <h3 class="text-xl font-bold text-white font-heading">
+                ¿Qué garantiza nuestro servicio?
+              </h3>
+              
+              <ul class="space-y-3.5 text-sm text-slate-300">
+                <li class="flex items-start">
+                  <span class="text-emerald-400 font-bold mr-3 text-lg">✓</span>
+                  <div>
+                    <strong class="text-white">Trámite directo ante la SICT:</strong>
+                    Sin coyotes de paso. Tu trámite entra por la vía legal y con recibo correspondiente.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-emerald-400 font-bold mr-3 text-lg">✓</span>
+                  <div>
+                    <strong class="text-white">Tiempo de entrega de 15 días:</strong>
+                    Reducimos al mínimo el tiempo improductivo de tus tractos y remolques.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-emerald-400 font-bold mr-3 text-lg">✓</span>
+                  <div>
+                    <strong class="text-white">Atención directa con Jair Quintana:</strong>
+                    Tienes comunicación constante por teléfono y WhatsApp sobre el avance de tu expediente.
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-emerald-400 font-bold mr-3 text-lg">✓</span>
+                  <div>
+                    <strong class="text-white">Oficina fija en Agrícola Pantitlán:</strong>
+                    Ubicación accesible para entrega y recepción de documentos.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- BOTONES DE CONTACTO DIRECTO -->
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="https://wa.me/525540519678?text=Hola%20Jair%2C%20vi%20el%20volante%20de%20Placas%20Federales%20en%20el%20sitio%20web%20y%20quiero%20iniciar%20un%20tr%C3%A1mite." target="_blank" class="flex-1 py-3.5 px-5 rounded-xl font-bold text-sm bg-emerald-600 hover:bg-emerald-700 text-white text-center shadow-lg transition-colors flex items-center justify-center space-x-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.088-.177.183-.076.357.101.174.45 1.05 1.05 1.584.773.689 1.426.902 1.628.989.202.087.321.073.441-.065.12-.138.514-.6.651-.806.137-.206.274-.173.461-.101.188.072 1.188.56 1.391.661.202.101.337.151.386.236.049.085.049.493-.095.898zM12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2 22l5.163-1.314A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+                <span>Cotizar por WhatsApp</span>
+              </a>
+              <a href="tel:5540519678" class="py-3.5 px-5 rounded-xl font-bold text-sm bg-slate-800 hover:bg-slate-700 text-white text-center border border-slate-700 transition-colors">
+                📞 55 40 51 96 78
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: NUESTROS SERVICIOS (4 Cards optimizadas para PC y Móvil)
+         ======================================================================== -->
+    <section id="servicios" class="py-20 bg-white dark:bg-[#0b0f17]">
+      <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <p class="text-xs font-bold tracking-widest text-fed-wine dark:text-rose-400 uppercase">Catálogo Completo ante la SICT</p>
+          <h2 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight font-heading">
+            Nuestros Servicios Especializados
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-base sm:text-lg">
+            Soluciones integrales de gestoría federal vehicular diseñadas para hombres-camión y empresas de logística.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          
+          <!-- CARD 1: EMISIÓN DE PLACAS NUEVAS -->
+          <div class="bg-slate-50 dark:bg-slate-900/90 rounded-2xl p-7 border border-slate-200 dark:border-slate-800 hover:border-fed-wine dark:hover:border-rose-500 transition-all hover:shadow-2xl group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-fed-wine/10 dark:bg-rose-500/10 text-fed-wine dark:text-rose-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 font-heading">Emisión de Placas Nuevas</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
+                Asesoría completa para nuevos registros de tractocamiones, semirremolques, rabones, cajas secas y camionetas de carga.
+              </p>
+              <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6">
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Alta en padrón SICT</li>
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Asignación de láminas y engomado</li>
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Tarjeta de circulación federal</li>
+              </ul>
+            </div>
+            <button onclick="cotizarServicio('Placas Nuevas')" class="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-fed-wine dark:text-rose-400 bg-fed-wine/10 dark:bg-rose-500/10 hover:bg-fed-wine hover:text-white dark:hover:bg-rose-600 dark:hover:text-white transition-colors">
+              Cotizar Placas Nuevas →
+            </button>
+          </div>
+
+          <!-- CARD 2: RENOVACIONES INTEGRALES -->
+          <div class="bg-slate-50 dark:bg-slate-900/90 rounded-2xl p-7 border border-slate-200 dark:border-slate-800 hover:border-fed-wine dark:hover:border-rose-500 transition-all hover:shadow-2xl group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 font-heading">Renovaciones Integrales</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
+                Renovación rápida y sin complicaciones: canje de placas por actualización, bajas de placas anteriores y reposición por robo o extravío.
+              </p>
+              <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6">
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Bajas definitivas y temporales</li>
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Reposición de láminas y tarjetas</li>
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Actualización de datos del titular</li>
+              </ul>
+            </div>
+            <button onclick="cotizarServicio('Renovaciones')" class="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-blue-600 dark:text-blue-400 bg-blue-500/10 hover:bg-blue-600 hover:text-white transition-colors">
+              Cotizar Renovación →
+            </button>
+          </div>
+
+          <!-- CARD 3: GESTIÓN DE PERMISOS -->
+          <div class="bg-slate-50 dark:bg-slate-900/90 rounded-2xl p-7 border border-slate-200 dark:border-slate-800 hover:border-fed-wine dark:hover:border-rose-500 transition-all hover:shadow-2xl group flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 font-heading">Gestión de Permisos</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
+                Permisos especiales para autotransporte federal de carga, conectividad, grúas, transporte privado y materiales peligrosos.
+              </p>
+              <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6">
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Permiso de conectividad SICT</li>
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Carga especializada y grúas</li>
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Autorizaciones extraordinarias</li>
+              </ul>
+            </div>
+            <button onclick="cotizarServicio('Permisos')" class="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-purple-600 dark:text-purple-400 bg-purple-500/10 hover:bg-purple-600 hover:text-white transition-colors">
+              Cotizar Permiso →
+            </button>
+          </div>
+
+          <!-- CARD 4: VERIFICACIONES VEHICULARES -->
+          <div class="bg-slate-50 dark:bg-slate-900/90 rounded-2xl p-7 border-2 border-emerald-500/60 dark:border-emerald-500/40 hover:border-emerald-600 transition-all hover:shadow-2xl group flex flex-col justify-between relative">
+            <span class="absolute -top-3 right-4 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-emerald-600 text-white shadow-md">
+              Obligatoria
+            </span>
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 font-heading">Verificaciones Vehiculares</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
+                Gestión y trámites para certificaciones de emisiones contaminantes y dictámenes de inspección físico-mecánica (NOM-068-SCT).
+              </p>
+              <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6">
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Holograma físico-mecánico NOM-068</li>
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Verificación de emisiones de humo</li>
+                <li class="flex items-center"><span class="text-emerald-500 font-bold mr-2">✓</span> Dictamen para Guardia Nacional</li>
+              </ul>
+            </div>
+            <button onclick="cotizarServicio('Verificaciones')" class="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white bg-emerald-600 hover:bg-emerald-700 transition-colors">
+              Agendar Verificación →
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         HERRAMIENTA INTERACTIVA: CALENDARIO DE INSPECCIÓN FÍSICO-MECÁNICA
+         (Digitalización exacta de la tabla de tu volante físico)
+         ======================================================================== -->
+    <section id="calendario" class="py-20 bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-black uppercase tracking-wider mb-3">
+            <span>NORMA OFICIAL MEXICANA NOM-068-SCT</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight font-heading">
+            Calendario de Verificación Físico-Mecánica
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">
+            Evita multas y corralones de la Guardia Nacional en carreteras federales. Selecciona el <strong>último dígito de tu placa</strong>:
+          </p>
+        </div>
+
+        <!-- SELECTOR INTERACTIVO DE DÍGITOS -->
+        <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10">
+          <button type="button" data-key="5-6" class="digit-btn active px-6 py-3.5 rounded-2xl border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 font-black text-base sm:text-lg transition-all">
+            Placas en <span class="text-xl">5 ó 6</span>
+          </button>
+          <button type="button" data-key="7-8" class="digit-btn px-6 py-3.5 rounded-2xl border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 font-black text-base sm:text-lg transition-all">
+            Placas en <span class="text-xl">7 u 8</span>
+          </button>
+          <button type="button" data-key="3-4" class="digit-btn px-6 py-3.5 rounded-2xl border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 font-black text-base sm:text-lg transition-all">
+            Placas en <span class="text-xl">3 ó 4</span>
+          </button>
+          <button type="button" data-key="1-2" class="digit-btn px-6 py-3.5 rounded-2xl border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 font-black text-base sm:text-lg transition-all">
+            Placas en <span class="text-xl">1 ó 2</span>
+          </button>
+          <button type="button" data-key="9-0" class="digit-btn px-6 py-3.5 rounded-2xl border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 font-black text-base sm:text-lg transition-all">
+            Placas en <span class="text-xl">9 ó 0</span>
+          </button>
+        </div>
+
+        <!-- TARJETA DE RESULTADO DINÁMICO EN PANTALLA ANCHA (PC) -->
+        <div id="calendar-result" class="max-w-5xl mx-auto bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-10 shadow-2xl border border-slate-200 dark:border-slate-800 transition-all">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-5">
+              <div class="flex items-center space-x-3">
+                <span class="px-3.5 py-1 rounded-lg bg-fed-wine text-white text-xs font-black uppercase">Terminación</span>
+                <span id="res-digitos" class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white font-mono">5 ó 6</span>
+              </div>
+
+              <div>
+                <p class="text-xs uppercase font-extrabold text-slate-500 dark:text-slate-400 tracking-wider">Período de Inspección Físico Anual</p>
+                <p id="res-periodo-anual" class="text-2xl sm:text-3xl font-black text-fed-wine dark:text-rose-400 mt-1 font-heading">
+                  Enero, Febrero, Marzo y Abril
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4 pt-3 border-t border-slate-200 dark:border-slate-800">
+                <div class="bg-slate-50 dark:bg-slate-800/70 p-4 rounded-2xl border border-slate-200 dark:border-slate-700">
+                  <span class="text-[11px] font-black uppercase text-slate-500 dark:text-slate-400 block mb-1">1er. Período Semestral</span>
+                  <span id="res-semestre-1" class="text-base font-black text-slate-900 dark:text-slate-100">Enero - Junio</span>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800/70 p-4 rounded-2xl border border-slate-200 dark:border-slate-700">
+                  <span class="text-[11px] font-black uppercase text-slate-500 dark:text-slate-400 block mb-1">2do. Período Semestral</span>
+                  <span id="res-semestre-2" class="text-base font-black text-slate-900 dark:text-slate-100">Julio - Diciembre</span>
+                </div>
+              </div>
+
+              <p id="res-consejo" class="text-xs text-slate-700 dark:text-slate-300 bg-amber-50 dark:bg-amber-950/40 p-4 rounded-xl border-l-4 border-amber-500 leading-relaxed font-medium">
+                Recomendado iniciar trámite con 20 días de anticipación para evitar multas de la Guardia Nacional.
+              </p>
+            </div>
+
+            <!-- CTA DIRECTO WHATSAPP PARA ESTA TERMINACIÓN -->
+            <div class="lg:col-span-5 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white rounded-3xl p-7 text-center space-y-4 shadow-xl border border-slate-700/60">
+              <span class="text-5xl">📋🚛</span>
+              <h4 class="text-xl font-bold font-heading">¿Te corresponde verificar?</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Agendamos tu cita y preparamos tu expediente técnico para asegurar la aprobación de tu dictamen físico-mecánico.
+              </p>
+              <a id="res-wa-btn" href="https://wa.me/525540519678?text=Hola%20Jair%2C%20mi%20placa%20termina%20en%205%20%C3%B3%206%20y%20quiero%20tramitar%20mi%20inspecci%C3%B3n%20f%C3%ADsico-mec%C3%A1nica." target="_blank" class="w-full inline-flex items-center justify-center py-4 px-5 rounded-xl font-extrabold text-sm bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg transition-all transform hover:scale-[1.02]">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.088-.177.183-.076.357.101.174.45 1.05 1.05 1.584.773.689 1.426.902 1.628.989.202.087.321.073.441-.065.12-.138.514-.6.651-.806.137-.206.274-.173.461-.101.188.072 1.188.56 1.391.661.202.101.337.151.386.236.049.085.049.493-.095.898zM12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2 22l5.163-1.314A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+                Agendar por WhatsApp
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: PROCESO EN 4 PASOS (15 DÍAS GARANTIZADOS)
+         ======================================================================== -->
+    <section id="proceso" class="py-20 bg-white dark:bg-[#0b0f17]">
+      <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <p class="text-xs font-bold tracking-widest text-fed-wine dark:text-rose-400 uppercase">Flujo Transparente</p>
+          <h2 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight font-heading">
+            ¿Cómo se realiza tu trámite paso a paso?
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">
+            El mismo proceso probado y transparente plasmado en nuestro volante publicitario oficial:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+          
+          <!-- PASO 1 -->
+          <div class="bg-slate-50 dark:bg-slate-900 rounded-3xl p-7 border border-slate-200 dark:border-slate-800 text-center relative space-y-4 hover:shadow-xl transition-shadow">
+            <div class="w-12 h-12 rounded-full bg-fed-wine text-white font-black text-lg flex items-center justify-center mx-auto shadow-md">
+              1
+            </div>
+            <div class="text-5xl">📄</div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white font-heading">Documentos</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Recepción y validación de tu expediente técnico (facturas, títulos, póliza de seguro, RFC) en nuestra oficina o vía digital.
+            </p>
+          </div>
+
+          <!-- PASO 2 -->
+          <div class="bg-slate-50 dark:bg-slate-900 rounded-3xl p-7 border border-slate-200 dark:border-slate-800 text-center relative space-y-4 hover:shadow-xl transition-shadow">
+            <div class="w-12 h-12 rounded-full bg-fed-wine text-white font-black text-lg flex items-center justify-center mx-auto shadow-md">
+              2
+            </div>
+            <div class="text-5xl">📋</div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white font-heading">Trámite SCT</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Ingreso formal ante la ventanilla oficial de la SICT. Pago de derechos y seguimiento permanente al folio oficial.
+            </p>
+          </div>
+
+          <!-- PASO 3 -->
+          <div class="bg-slate-50 dark:bg-slate-900 rounded-3xl p-7 border border-slate-200 dark:border-slate-800 text-center relative space-y-4 hover:shadow-xl transition-shadow">
+            <div class="w-12 h-12 rounded-full bg-fed-wine text-white font-black text-lg flex items-center justify-center mx-auto shadow-md">
+              3
+            </div>
+            <div class="text-5xl">✍️</div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white font-heading">Emisión Oficial</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              Validación y asignación de la matrícula federal en el padrón nacional de autotransporte y generación de tarjeta de circulación.
+            </p>
+          </div>
+
+          <!-- PASO 4 -->
+          <div class="bg-emerald-50 dark:bg-emerald-950/40 rounded-3xl p-7 border-2 border-emerald-500 text-center relative space-y-4 shadow-lg">
+            <div class="w-12 h-12 rounded-full bg-emerald-600 text-white font-black text-lg flex items-center justify-center mx-auto shadow-md">
+              4
+            </div>
+            <div class="text-5xl">📦</div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white font-heading">Entrega (15 días)</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed font-semibold">
+              Entrega en mano de tus láminas metálicas originales, engomados y documentos listos para circular por toda la República Mexicana.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: REQUISITOS + COTIZADOR DE TRÁMITE ASISTIDO (2 Columnas en PC)
+         ======================================================================== -->
+    <section id="requisitos" class="py-20 bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- COLUMNA IZQUIERDA: REQUISITOS Y ACORDEÓN -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <p class="text-xs font-bold tracking-widest text-fed-wine dark:text-rose-400 uppercase">Información y Documentación</p>
+              <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight font-heading mt-1">
+                Requisitos y Preguntas Frecuentes
+              </h2>
+              <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">
+                Consulta los documentos indispensables para iniciar tu trámite federal sin contratiempos:
+              </p>
+            </div>
+
+            <!-- ACORDEÓN DE REQUISITOS -->
+            <div class="space-y-3">
+              
+              <!-- ITEM 1 -->
+              <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+                <button type="button" class="faq-toggle w-full p-5 text-left flex justify-between items-center font-bold text-slate-900 dark:text-white text-sm hover:text-fed-wine dark:hover:text-rose-400 transition-colors">
+                  <span>¿Qué documentos se necesitan para Placas Nuevas?</span>
+                  <svg class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-content">
+                  <div class="p-5 pt-0 text-xs text-slate-600 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80 leading-relaxed space-y-2">
+                    <p>• <strong>Factura o Título de propiedad</strong> de la unidad (con endosos o carta factura vigente).</p>
+                    <p>• <strong>Póliza de seguro vigente</strong> con cobertura de responsabilidad civil de autotransporte federal.</p>
+                    <p>• <strong>Identificación oficial</strong> (INE o Pasaporte) del titular o representante legal.</p>
+                    <p>• <strong>Constancia de Situación Fiscal (RFC)</strong> actualizada.</p>
+                    <p>• <strong>Comprobante de domicilio</strong> no mayor a 3 meses.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 2 -->
+              <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+                <button type="button" class="faq-toggle w-full p-5 text-left flex justify-between items-center font-bold text-slate-900 dark:text-white text-sm hover:text-fed-wine dark:hover:text-rose-400 transition-colors">
+                  <span>¿Qué vehículos pueden portar Placas Federales?</span>
+                  <svg class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-content">
+                  <div class="p-5 pt-0 text-xs text-slate-600 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80 leading-relaxed">
+                    Tractocamiones, semirremolques, remolques, cajas secas, tolvas, volteos, plataformas, camiones tipo rabón y torton, así como camionetas de 3.5 toneladas destinadas al transporte de carga en vías de jurisdicción federal.
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 3 -->
+              <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+                <button type="button" class="faq-toggle w-full p-5 text-left flex justify-between items-center font-bold text-slate-900 dark:text-white text-sm hover:text-fed-wine dark:hover:text-rose-400 transition-colors">
+                  <span>¿Cómo sé que el trámite es 100% legal?</span>
+                  <svg class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-content">
+                  <div class="p-5 pt-0 text-xs text-slate-600 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80 leading-relaxed">
+                    Te proporcionamos el número de folio oficial emitido por la SICT para que puedas comprobar directamente en los portales gubernamentales el estatus de tu unidad. Además, recibes recibo formal y atención directa en nuestra oficina de Pantitlán.
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM 4 -->
+              <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+                <button type="button" class="faq-toggle w-full p-5 text-left flex justify-between items-center font-bold text-slate-900 dark:text-white text-sm hover:text-fed-wine dark:hover:text-rose-400 transition-colors">
+                  <span>¿Realizan entregas fuera de la CDMX?</span>
+                  <svg class="faq-icon w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="faq-content">
+                  <div class="p-5 pt-0 text-xs text-slate-600 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800/80 leading-relaxed">
+                    Sí. Atendemos transportistas de toda la República Mexicana. Si te encuentras en el interior del país, enviamos tu paquete de láminas, tarjeta y engomado mediante paquetería de alta seguridad asegurada (DHL / FedEx).
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- BOTÓN CHECKLIST PDF -->
+            <div class="p-5 rounded-2xl bg-fed-wine/5 dark:bg-rose-500/5 border border-fed-wine/20 dark:border-rose-500/20 flex items-center justify-between">
+              <div class="flex items-center space-x-3.5">
+                <span class="text-3xl">📄</span>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900 dark:text-white">Checklist de Verificación (PDF)</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">Descarga la lista completa de requisitos técnicos</p>
+                </div>
+              </div>
+              <a href="https://wa.me/525540519678?text=Hola%20Jair%2C%20quisiera%20recibir%20el%20checklist%20de%20requisitos%20en%20PDF%20para%20placas%20federales." target="_blank" class="px-4 py-2 rounded-xl text-xs font-bold bg-fed-wine text-white hover:bg-fed-wine-dark transition-colors shadow-sm">
+                Solicitar PDF
+              </a>
+            </div>
+
+          </div>
+
+          <!-- COLUMNA DERECHA: FORMULARIO "TRÁMITE ASISTIDO" -->
+          <div id="tramite-asistido" class="lg:col-span-6">
+            <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-9 shadow-2xl border border-slate-200 dark:border-slate-800">
+              
+              <div class="border-b border-slate-200 dark:border-slate-800 pb-5 mb-6">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-2xl font-bold text-slate-900 dark:text-white font-heading">Trámite Asistido</h3>
+                  <div class="flex items-center space-x-1.5">
+                    <span class="w-6 h-6 rounded-full bg-fed-wine text-white text-xs font-bold flex items-center justify-center">1</span>
+                    <span class="w-4 h-0.5 bg-slate-300 dark:bg-slate-700"></span>
+                    <span class="w-6 h-6 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-bold flex items-center justify-center">2</span>
+                    <span class="w-4 h-0.5 bg-slate-300 dark:bg-slate-700"></span>
+                    <span class="w-6 h-6 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-bold flex items-center justify-center">3</span>
+                  </div>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">
+                  Ingresa los datos básicos para cotizar tu trámite. Te responderemos directamente a tu WhatsApp en minutos.
+                </p>
+              </div>
+
+              <form id="quote-form" class="space-y-4">
+                
+                <div>
+                  <label for="form-nombre" class="block text-xs font-bold uppercase text-slate-700 dark:text-slate-300 mb-1.5">Nombre Completo o Razón Social *</label>
+                  <input type="text" id="form-nombre" required placeholder="Ej. Juan Pérez / Transportes Azteca S.A." class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-fed-wine focus:outline-none transition-all" />
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="form-tel" class="block text-xs font-bold uppercase text-slate-700 dark:text-slate-300 mb-1.5">Teléfono / WhatsApp *</label>
+                    <input type="tel" id="form-tel" required placeholder="Ej. 55 1234 5678" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-fed-wine focus:outline-none transition-all" />
+                  </div>
+                  <div>
+                    <label for="form-tramite" class="block text-xs font-bold uppercase text-slate-700 dark:text-slate-300 mb-1.5">Tipo de Trámite *</label>
+                    <select id="form-tramite" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-fed-wine focus:outline-none transition-all">
+                      <option value="Placas Nuevas (Alta Federal)">Emisión de Placas Nuevas</option>
+                      <option value="Verificación Físico-Mecánica (NOM-068)">Verificación Físico-Mecánica</option>
+                      <option value="Renovación / Canje de Placas">Renovaciones y Canjes</option>
+                      <option value="Baja de Placas Federales">Baja de Placas Federales</option>
+                      <option value="Permiso Federal Especial">Permiso Especial SICT</option>
+                      <option value="Asesoría General">Asesoría General</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="form-unidad" class="block text-xs font-bold uppercase text-slate-700 dark:text-slate-300 mb-1.5">Tipo de Unidad *</label>
+                  <select id="form-unidad" class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-fed-wine focus:outline-none transition-all">
+                    <option value="Tractocamión (Quinta Rueda)">Tractocamión (Quinta Rueda)</option>
+                    <option value="Remolque / Semirremolque / Caja Seca">Remolque / Semirremolque / Caja Seca</option>
+                    <option value="Camión Rabón o Torton">Camión Rabón o Torton</option>
+                    <option value="Camioneta de Carga (3.5 Tons)">Camioneta de Carga (3.5 Tons)</option>
+                    <option value="Plataforma / Tolva / Volteo">Plataforma / Tolva / Volteo</option>
+                    <option value="Flotilla Completa">Flotilla Completa (Varias unidades)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="form-detalles" class="block text-xs font-bold uppercase text-slate-700 dark:text-slate-300 mb-1.5">Detalles de la Unidad o Comentarios</label>
+                  <textarea id="form-detalles" rows="3" placeholder="Indica modelo, año o situación actual de tus placas..." class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 text-sm text-slate-900 dark:text-white focus:ring-2 focus:ring-fed-wine focus:outline-none transition-all"></textarea>
+                </div>
+
+                <div class="pt-3">
+                  <button type="submit" class="w-full py-4 rounded-xl font-black text-white bg-emerald-600 hover:bg-emerald-700 shadow-xl shadow-emerald-600/30 transition-all flex items-center justify-center space-x-2 text-base">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.088-.177.183-.076.357.101.174.45 1.05 1.05 1.584.773.689 1.426.902 1.628.989.202.087.321.073.441-.065.12-.138.514-.6.651-.806.137-.206.274-.173.461-.101.188.072 1.188.56 1.391.661.202.101.337.151.386.236.049.085.049.493-.095.898zM12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2 22l5.163-1.314A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+                    <span>Enviar Solicitud por WhatsApp</span>
+                  </button>
+                  <p class="text-[11px] text-center text-slate-500 dark:text-slate-400 mt-2">
+                    🔒 Tus datos están protegidos. Asesoría directa con Jair Quintana.
+                  </p>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: CONTACTO Y UBICACIÓN FÍSICA (Agrícola Pantitlán, CDMX)
+         ======================================================================== -->
+    <section id="ubicacion" class="py-20 bg-white dark:bg-[#0b0f17]">
+      <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <p class="text-xs font-bold tracking-widest text-fed-wine dark:text-rose-400 uppercase">Visítanos en Nuestra Oficina</p>
+          <h2 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight font-heading">
+            Oficina Central y Atención al Cliente
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">
+            Estamos ubicados estratégicamente cerca de las principales arterias viales y zonas logísticas de la CDMX y el Estado de México.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- TARJETA DE DATOS DE CONTACTO (Inspirada en el flyer y mockup) -->
+          <div class="lg:col-span-5 bg-gradient-to-br from-slate-950 via-slate-900 to-[#162032] text-white rounded-3xl p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden border border-slate-800">
+            
+            <div class="space-y-6 relative z-10">
+              <div>
+                <span class="px-3.5 py-1 rounded-full bg-fed-wine text-white text-[11px] font-black uppercase tracking-wider">
+                  Gestor Titular Especializado
+                </span>
+                <h3 class="text-3xl font-black text-white mt-3 font-heading">Jair Quintana</h3>
+                <p class="text-xs text-slate-300">TramitaFedmx - Placas Federales</p>
+              </div>
+
+              <!-- DATOS DETALLADOS -->
+              <div class="space-y-4 pt-4 border-t border-slate-800 text-sm">
+                
+                <div class="flex items-start space-x-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-fed-wine-light shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 block font-bold uppercase">Dirección de Oficina:</span>
+                    <strong class="text-slate-100 font-medium leading-relaxed block mt-0.5">Av. Central #79, Agrícola Pantitlán, Iztacalco, C.P. 08100, Ciudad de México, CDMX</strong>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-emerald-400 shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 block font-bold uppercase">Teléfono y WhatsApp:</span>
+                    <a href="tel:5540519678" class="text-xl font-black text-white hover:text-emerald-400 transition-colors">55 40 51 96 78</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-blue-400 shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 block font-bold uppercase">Correo Electrónico:</span>
+                    <a href="mailto:jrqgestor@gmail.com" class="text-slate-100 hover:text-blue-300 transition-colors font-medium">jrqgestor@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-amber-400 shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 block font-bold uppercase">Horario de Oficina:</span>
+                    <span class="text-slate-200">Lunes a Viernes: 9:00 AM - 6:00 PM<br/>Sábados: 9:00 AM - 2:00 PM</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- BOTONES RÁPIDOS DE ACCIÓN -->
+            <div class="pt-6 mt-6 border-t border-slate-800 grid grid-cols-2 gap-3 relative z-10">
+              <a href="tel:5540519678" class="py-3.5 px-4 rounded-xl text-center font-extrabold text-xs bg-slate-800 hover:bg-slate-700 text-white transition-colors">
+                📞 Llamar Ahora
+              </a>
+              <a href="https://maps.google.com/?q=Av.+Central+79,+Agricola+Pantitlan,+CDMX" target="_blank" class="py-3.5 px-4 rounded-xl text-center font-extrabold text-xs bg-fed-wine hover:bg-fed-wine-dark text-white transition-colors">
+                📍 Cómo Llegar
+              </a>
+            </div>
+
+          </div>
+
+          <!-- MAPA INTERACTIVO / UBICACIÓN EN CDMX (Pantalla completa / PC) -->
+          <div class="lg:col-span-7 bg-slate-100 dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col min-h-[400px]">
+            <div class="p-4 bg-slate-200 dark:bg-slate-800 flex justify-between items-center text-xs font-bold">
+              <span class="text-slate-700 dark:text-slate-300 flex items-center">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 mr-2"></span>
+                Ubicación: Agrícola Pantitlán, CDMX
+              </span>
+              <a href="https://maps.google.com/?q=Av.+Central+79,+Agricola+Pantitlan,+CDMX" target="_blank" class="text-fed-wine dark:text-rose-400 hover:underline">
+                Abrir en Google Maps ↗
+              </a>
+            </div>
+            
+            <div class="flex-grow w-full h-full min-h-[400px]">
+              <iframe 
+                title="Mapa de Ubicación TramitaFedmx Jair Quintana Pantitlán" 
+                class="w-full h-full min-h-[400px] border-0" 
+                src="https://maps.google.com/maps?q=Av.+Central+79,+Agricola+Pantitlan,+Iztacalco,+CDMX&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER (Con tu Logotipo Oficial en Alta Resolución)
+       ======================================================================== -->
+  <footer class="bg-slate-950 text-slate-400 py-14 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-slate-800/80">
+        
+        <div class="space-y-4">
+          <img src="logo-dark.png" alt="TramitaFedmx Placas Federales" class="h-14 w-auto object-contain" />
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Gestoría especializada en autotransporte federal de carga ante la SICT/SCT. Soluciones logísticas confiables y globales en México.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-extrabold uppercase tracking-wider mb-4 text-xs">Servicios SICT</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#servicios" class="hover:text-white transition-colors">Placas Federales Nuevas</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Inspección Físico-Mecánica (NOM-068)</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Canjes y Bajas Oficiales</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Permisos de Conectividad y Carga</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-extrabold uppercase tracking-wider mb-4 text-xs">Atención Directa</h4>
+          <ul class="space-y-2.5">
+            <li>Gestor: <strong class="text-white">Jair Quintana</strong></li>
+            <li>Tel: <a href="tel:5540519678" class="text-emerald-400 hover:underline font-bold text-sm">55 40 51 96 78</a></li>
+            <li>Email: <a href="mailto:jrqgestor@gmail.com" class="hover:text-white">jrqgestor@gmail.com</a></li>
+            <li>Av. Central #79, Pantitlán, CDMX</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-extrabold uppercase tracking-wider mb-4 text-xs">Certeza y Legalidad</h4>
+          <p class="text-slate-400 leading-relaxed mb-3">
+            Trámites válidos a nivel federal ante la SICT y Guardia Nacional. Cumplimiento estricto con entrega en 15 días hábiles.
+          </p>
+          <div class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-[11px] text-emerald-400 font-mono">
+            <span>● SISTEMA VERIFICADO SICT</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-slate-500 gap-4">
+        <p>© 2026 TramitaFedmx - Placas Federales. Gestor Especializado Jair Quintana. Todos los derechos reservados.</p>
+        <div class="flex space-x-6">
+          <a href="#requisitos" class="hover:text-slate-300 transition-colors">Términos y Condiciones</a>
+          <a href="#requisitos" class="hover:text-slate-300 transition-colors">Aviso de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL LIGHTBOX: VER PUBLICIDAD IMPRESA A TAMAÑO COMPLETO
+       ======================================================================== -->
+  <div id="ad-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm hidden items-center justify-center p-4 sm:p-8">
+    <div class="relative max-w-5xl w-full bg-slate-900 rounded-3xl overflow-hidden shadow-2xl border border-slate-700 flex flex-col max-h-[92vh]">
+      
+      <!-- Barra superior del modal -->
+      <div class="p-4 sm:p-5 bg-slate-950 border-b border-slate-800 flex justify-between items-center text-white">
+        <div class="flex items-center space-x-3">
+          <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+          <h3 class="text-sm sm:text-base font-bold">Publicidad Oficial Impresa - TramitaFedmx</h3>
+        </div>
+        <button type="button" class="close-ad-modal p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Contenedor de la imagen -->
+      <div class="overflow-auto p-2 sm:p-4 flex items-center justify-center bg-slate-950/50 flex-grow">
+        <img src="publicidad-oficial.jpg" alt="Publicidad Oficial Impresa TramitaFedmx" class="max-w-full max-h-[75vh] object-contain rounded-xl shadow-lg" />
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="p-4 bg-slate-950 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-300">
+        <div class="flex items-center space-x-2">
+          <span>Gestor: <strong>Jair Quintana</strong></span>
+          <span>•</span>
+          <span class="text-emerald-400 font-bold">55 40 51 96 78</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <a href="https://wa.me/525540519678?text=Hola%20Jair%2C%20vi%20la%20publicidad%20oficial%20y%20quiero%20iniciar%20un%20tr%C3%A1mite%20federal." target="_blank" class="px-5 py-2.5 rounded-xl font-bold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors">
+            Cotizar por WhatsApp
+          </a>
+          <button type="button" class="close-ad-modal px-4 py-2.5 rounded-xl font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors">
+            Cerrar
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP (Imán de Prospectos Móvil & PC)
+       ======================================================================== -->
+  <aside aria-label="Contacto directo por WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <div class="hidden sm:block mr-3 bg-white dark:bg-slate-900 px-4 py-2.5 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-800 dark:text-slate-200 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+      💬 ¿Dudas? Escríbele a Jair Quintana
+    </div>
+    <a 
+      href="https://wa.me/525540519678?text=Hola%20Jair%2C%20estoy%20viendo%20tu%20sitio%20web%20TramitaFedmx%20y%20quiero%20cotizar%20un%20tr%C3%A1mite%20federal." 
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Abrir chat de WhatsApp con Jair Quintana"
+      class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-2xl whatsapp-pulse transition-transform transform hover:scale-110 active:scale-95">
+      <svg class="w-8 h-8 sm:w-9 sm:h-9" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.088-.177.183-.076.357.101.174.45 1.05 1.05 1.584.773.689 1.426.902 1.628.989.202.087.321.073.441-.065.12-.138.514-.6.651-.806.137-.206.274-.173.461-.101.188.072 1.188.56 1.391.661.202.101.337.151.386.236.049.085.049.493-.095.898zM12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2 22l5.163-1.314A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Script interactivo -->
+  <script src="app.js"></script>
+</body>
+</html>
